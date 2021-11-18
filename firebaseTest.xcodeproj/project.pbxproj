@@ -61,8 +61,8 @@
 		1A0911A72743EBCF00E1D5CE /* firebaseTest */ = {
 			isa = PBXGroup;
 			children = (
+				1A87319527468AAC00EBB9B1 /* Views */,
 				1A0911A82743EBCF00E1D5CE /* firebaseTestApp.swift */,
-				1A0911AA2743EBCF00E1D5CE /* ContentView.swift */,
 				1A0911AC2743EBD000E1D5CE /* Assets.xcassets */,
 				1A0911B12743EBD000E1D5CE /* Info.plist */,
 				1AE1CE5227453FD400DF88FA /* GoogleService-Info.plist */,
@@ -77,6 +77,14 @@
 				1A0911AF2743EBD000E1D5CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A87319527468AAC00EBB9B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0911AA2743EBCF00E1D5CE /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AF2E9AD1C6CE546FDE3D7C1B /* Frameworks */ = {
