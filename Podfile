@@ -9,5 +9,5 @@ target 'firebaseTest' do
   
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Firebase/Firestore'
 end
