@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var model = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!!")
-            .padding()
+        List(model.list, id: \.self) { item in
+            Text(item)
+            
+        }
     }
 }
 
