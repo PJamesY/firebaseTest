@@ -11,6 +11,27 @@ import FirebaseFirestore
 class ViewModel: ObservableObject {
     @Published var list = [Todo]()
     
+    func addData(name: String, notes: String) {
+        
+        // Get a reference to the database
+        let db = Firestore.firestore()
+        
+        // Add a document to a collection
+        db.collection("todos").addDocument(data: ["name": name, "notes": notes]) { error in
+            // check for errors
+            if error == nil {
+                // No errors
+                
+                // call get data to retrieve latest data
+                self.getData()
+            }
+            else {
+                // Handle the error
+            }
+        }
+        
+    }
+    
     func getData()  {
         // Get ad reference to the database
         let db = Firestore.firestore()
