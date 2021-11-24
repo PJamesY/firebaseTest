@@ -18,7 +18,17 @@ struct ContentView: View {
         
         VStack {
             List(model.list) { item in
-                Text(item.name)
+                HStack {
+                    Text(item.name)
+                    Spacer()
+                    Button(action: {
+                        model.deleteData(todoToDelete: item)
+                    }, label: {
+                        Image(systemName: "minus.circle")
+                    })
+                }
+                
+                
                 
             }
             
