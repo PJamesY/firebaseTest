@@ -11,6 +11,14 @@ import FirebaseFirestore
 class ViewModel: ObservableObject {
     @Published var list = [Todo]()
     
+    func updateData(todoToUpdate: Todo) {
+        // Get a reference to the database
+        let db = Firestore.firestore()
+        
+        // Set the data to update
+//        db.collection("todos").document(todoToUpdate.)
+    }
+    
     func deleteData(todoToDelete: Todo) {
         // Get a reference to the database
         let db = Firestore.firestore()
