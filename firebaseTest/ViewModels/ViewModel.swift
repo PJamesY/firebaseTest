@@ -16,7 +16,7 @@ class ViewModel: ObservableObject {
         let db = Firestore.firestore()
         
         // Set the data to update
-//        db.collection("todos").document(todoToUpdate.)
+        db.collection("todos").document(todoToUpdate.id).setData(<#T##documentData: [String : Any]##[String : Any]#>)
     }
     
     func deleteData(todoToDelete: Todo) {
